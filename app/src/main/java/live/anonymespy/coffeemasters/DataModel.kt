@@ -1,0 +1,12 @@
+package live.anonymespy.coffeemasters
+
+class Product(var id: Int, var name: String, var price: Double, var image: String)
+
+class Category(var name: String, var products: MutableList<Product>)
+
+class ItemInCart(var product: Product, var quantity: Int)
+
+
+data class Menu(
+    val categories: List<Category>
+)
